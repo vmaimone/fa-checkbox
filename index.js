@@ -1,4 +1,4 @@
-module.exports = (function () {
+const checkbox = (function () {
   const em = n => (+n).toFixed(2)+'em'
 
   const base = 1.125 /* em */
@@ -59,3 +59,7 @@ module.exports = (function () {
     }
   }
 })()
+
+if((typeof module === 'object')) {
+  module.exports = checkbox
+}
